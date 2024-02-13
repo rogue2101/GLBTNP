@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/company_login/" method="post" role="form" novalidate="novalidate">
+    {% csrf_token %}
+    <h3>Company login</h3>
+    <!-- {% for message in messages %}
+    <h3>{{message}}</h3>
+    {% endfor %} -->
+
+    <input type="text" name="cemail" placeholder="Enter Email" required>
+    <input type="password" placeholder="Enter Password" name="cpassword" required>
+    <button type="submit">Login</button>
+    </form>
+</body>
+</html>
